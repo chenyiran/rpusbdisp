@@ -1,0 +1,12 @@
+--- a/drivers/video/Kconfig	2014-05-07 23:27:50.000000000 +0800
++++ b/drivers/video/Kconfig	2014-05-07 21:48:35.000000000 +0800
+@@ -259,6 +259,9 @@
+ comment "Frame buffer hardware drivers"
+ 	depends on FB
+ 
++source "drivers/video/robopeak/Kconfig"
++
++
+ config FB_GRVGA
+ 	tristate "Aeroflex Gaisler framebuffer support"
+ 	depends on FB && SPARC
