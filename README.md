@@ -74,3 +74,6 @@ SRC_URI += "file://rpusbdispsrc.tar.bz2"
  ```code 
 modprobe rp_usbdisplay
 ```
+
+Intel Galileo running Yocto's Sato Reference User Interface
+![text](http://i1266.photobucket.com/albums/jj531/wallace1zq/20140625_170348_zpsf877434f.jpg)
