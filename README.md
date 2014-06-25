@@ -41,3 +41,7 @@ Follow the instruction below to install Robopeak driver on [Yocto BSP](https://d
 ```
 
 2. Overwrite the *Makefile* in your working directory with the one in the *rpusbdisp/yocto* folder.
+
+3. Compress all files & directories in your working directory into tar.bz2 format.
+
+4. Nex
