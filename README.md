@@ -40,4 +40,4 @@ Follow the instruction below to install Robopeak driver on [Yocto BSP](https://d
 |               |---+stop.sh
 ```
 
-2. Overwrite the *Makefile* in your working directory with the one in the *yocto/* folder.
+2. Overwrite the *Makefile* in your working directory with the one in the *rpusbdisp/yocto* folder.
