@@ -5,7 +5,7 @@ This is a fork from robopeak/rpusbdisp to enable Robopeak USB display on Intel(r
 
 Please refer to README_robopeak.md for more information.
 
-Follow the instruction below to install Robopeak driver on [Yocto BSP](https://downloadcenter.intel.com/Detail_Desc.aspx?DwnldID=23171) for Intel(r) Galileo. You will need a host machine to build the BSP.
+Follow the instruction below to install Robopeak driver on [Yocto BSP](https://downloadcenter.intel.com/Detail_Desc.aspx?DwnldID=23171) for Intel(r) Galileo. You need to perform the following steps on a host machine.
 
 1. Create a temporary folder in your working directory (i.e *~/workdir/temp*). You will need to copy & rearrange the files under *drivers/* such that it map to the following directory structure:
 ```log
