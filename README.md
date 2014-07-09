@@ -7,6 +7,9 @@ Please refer to README_robopeak.md for more information.
 
 Follow the instruction below to install Robopeak driver on [Yocto BSP](https://downloadcenter.intel.com/Detail_Desc.aspx?DwnldID=23171) for Intel(r) Galileo. You need to perform the following steps on a host machine.
 
+Installing the driver from Kernel Menuconfig - Integrate Driver into Kernel Source
+==================================================================================
+
 1. Create a temporary folder in your working directory (i.e *~/workdir/temp*). You will need to copy & rearrange the files under *drivers/* such that it map to the following directory structure:
  ```log
 |---/linux
@@ -73,6 +76,16 @@ SRC_URI += "file://rpusbdispsrc.tar.bz2"
 12. RP_USBDISPLAY driver is not loaded by default. You need load the driver manually by entering the following command on your Intel Galileo target.
  ```code 
 modprobe rp_usbdisplay
+```
+
+Kernel Module Recipe
+====================
+
+1. This is probably the easiest way to install Robopeak driver as it do not modify the kernel source package.
+2. Copy the contents in the "yocto_recipe" folder to */meta-clanton_vX.Y.Z/meta-clanton-distro/recipes-kernel/*.
+3. Once done, enter the following command in the yocto build environment:
+```code
+~$ bitbake rpusbdisplay -c build
 ```
 
 Intel Galileo running Yocto's Sato Reference User Interface
